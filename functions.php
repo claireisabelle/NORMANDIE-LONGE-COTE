@@ -53,8 +53,15 @@ add_action('after_setup_theme', 'nlc_setup');
  * ACF 
  ***********************************************
  */
-// HOME
 require get_template_directory().'/inc/acf/acf-home.php';
+
+
+/*
+ ***********************************************
+	CUSTOMIZER
+ ***********************************************
+ */
+require get_stylesheet_directory().'/inc/customizer/customizer-footer.php';
 
 
 
