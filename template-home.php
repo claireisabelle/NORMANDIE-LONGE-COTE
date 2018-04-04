@@ -5,12 +5,19 @@
 ?>
 
 <?php get_header(); ?>
+	<?php while(have_posts()): the_post(); ?>
+		<title><?php the_field('seo-titre'); ?></title>
+		<meta name="description" content="" />
+	<?php endwhile; ?>
+<?php get_template_part('header2'); ?>
+
+	<?php while(have_posts()): the_post(); ?>
 
 		<section class="showcase">
 			<div class="showcase-wrapper">
-				<h1>Normandie Longe Côte</h1>
-				<p class="description">8 clubs sportifs pour pratiquer le longe côte en Normandie</p>
-				<a href="#front-main" class="scroll link-section">Les Clubs</a>
+				<h1><?php the_title(); ?></h1>
+				<p class="description"><?php the_field('sous-titre'); ?></p>
+				<a href="#front-main" class="scroll link-section"><?php the_field('texte_bouton'); ?></a>
 			</div>
 			<!-- /.showcase-wrapper -->
 		</section>
@@ -18,12 +25,12 @@
 
 		
 		<section class="front-main" id="front-main">
-			<h2>Les Clubs Normands</h2>
-			<p>Découvrez et pratiquez le longe côte toute l'année en adhérant à l'un des 8 clubs normands affiliés à NORMANDIE LONGE COTE</p>
+			<h2><?php the_field('titre_2'); ?></h2>
+			<p><?php the_field('description_'); ?></p>
 			
 			<div class="google-map-wrapper">
 				<div class="google-map">
-					<iframe src="https://www.google.com/maps/d/embed?mid=1rxezmYjkHDLcHAXed2NgPPm81UQrKmxJ" width="640" height="480"></iframe>
+					<iframe src="<?php the_field('google_map'); ?>" width="640" height="480"></iframe>
 				</div>
 				<!-- /.google-map -->
 			</div>
@@ -142,5 +149,7 @@
 
 		</section>
 		<!-- /.front-main -->
+
+	<?php endwhile; ?>
 
 <?php get_footer(); ?>
