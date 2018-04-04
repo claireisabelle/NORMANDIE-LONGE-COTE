@@ -89,4 +89,41 @@ if ( ! file_exists( get_template_directory() . '/inc/navwalker/class-wp-bootstra
 	CUSTOM POST TYPE
  ***********************************************
  */
+function nlc_clubs(){
+	$labels = array(
+		'name'               => _x( 'Clubs', 'normandielongecote' ),
+		'singular_name'      => _x( 'Club', 'post type singular name', 'normandielongecote' ),
+		'menu_name'          => _x( 'Clubs', 'admin menu', 'normandielongecote' ),
+		'name_admin_bar'     => _x( 'Club', 'add new on admin bar', 'normandielongecote' ),
+		'add_new'            => _x( 'Ajouter un Club', 'book', 'normandielongecote' ),
+		'add_new_item'       => __( 'Ajouter une nouveau Club', 'normandielongecote' ),
+		'new_item'           => __( 'Nouveau Club', 'normandielongecote' ),
+		'edit_item'          => __( 'Editer Club', 'normandielongecote' ),
+		'view_item'          => __( 'Voir le Club', 'normandielongecote' ),
+		'all_items'          => __( 'Tous les Clubs', 'normandielongecote' ),
+		'search_items'       => __( 'Recherche Club', 'normandielongecote' ),
+		'parent_item_colon'  => __( 'Parent Club:', 'normandielongecote' ),
+		'not_found'          => __( 'Aucun Club trouvé.', 'normandielongecote' ),
+		'not_found_in_trash' => __( 'Aucun Club dans la corbeille.', 'normandielongecote' )
+	);
 
+	$args = array(
+		'labels'             => $labels,
+    	'description'        => __( 'Les clubs de Normandie', 'normandielongecote' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'clubs' ),
+		'capability_type'    => 'page',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+	);
+
+	register_post_type( 'clubs', $args );
+}
+
+add_action( 'init', 'nlc_clubs' );
