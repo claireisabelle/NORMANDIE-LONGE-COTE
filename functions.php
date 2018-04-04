@@ -62,6 +62,7 @@ require get_template_directory().'/inc/acf/acf-home.php';
  ***********************************************
  */
 require get_stylesheet_directory().'/inc/customizer/customizer-footer.php';
+require get_stylesheet_directory().'/inc/customizer/customizer-header.php';
 
 
 

@@ -332,42 +332,6 @@
 					</section>
 					<!-- /.card-club -->
 
-					
-
-
-					<!-- <section class="club-dashboard">
-						<div class="club-dashboard-title">
-							Hauteville sur Mer
-						</div>
-
-						<div class="club-dashboard-options">
-							<div class="club-profile">
-								<a href="">
-								<span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
-								INFOS</a>
-							</div>
-
-							<div class="club-calendar">
-								<a href="">
-								<span><i class="fa fa-calendar" aria-hidden="true"></i></span>
-								SEANCES</a>
-							</div>
-							
-							<div class="club-news">
-								<a href="">
-								<span><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
-								ACTU</a>
-							</div>
-						</div>
-					</section> -->
-
-
-
-					
-
-
-
-
 
 				</div><!-- /.espace-club -->
 				
@@ -394,7 +358,7 @@
 
 		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
 
-			<a class="navbar-brand" href="#">Normandie Longe Côte</a>
+			<a class="navbar-brand" href="#" id="header-ligne1"><?php echo get_theme_mod('header_ligne1', 'Normandie Longe Côte'); ?></a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
