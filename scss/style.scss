@@ -385,7 +385,8 @@ li.nav-item.active, li.nav-item:hover{
 .showcase{
 	width: 100%;
 	height: calc(100vh - 50px);
-	background-image: url('img/longe.jpg');
+	/* CF template-home.php	
+	background-image: url('img/longe.jpg'); */
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -738,7 +739,8 @@ li.nav-item.active, li.nav-item:hover{
 .showcase-interne{
 	width: 100%;
 	height: calc(100vh - 50px);
-	background-image: url('img/longe3.jpg');
+	/* CF template-interne-img.php
+	background-image: url('img/longe3.jpg'); */
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -796,4 +798,25 @@ li.nav-item.active, li.nav-item:hover{
 .interne-content p{
 	font-size: 1rem;
 	line-height: 2em;
+}
+
+.interne-content img{
+	max-width: 100%;
+	height: auto;
+}
+
+.interne-content img{
+	max-width: 100%;
+	height: auto;
+}
+
+.interne-content img.aligncenter{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.interne-content img.alignright{
+	float:right; 
+	margin:0 0 1em 1em;
 }

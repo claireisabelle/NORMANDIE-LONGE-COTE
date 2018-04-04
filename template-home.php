@@ -8,6 +8,11 @@
 	<?php while(have_posts()): the_post(); ?>
 		<title><?php the_field('seo-titre'); ?></title>
 		<meta name="description" content="" />
+		<style>
+			.showcase{
+				background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);
+			}			
+		</style>
 	<?php endwhile; ?>
 <?php get_template_part('header2'); ?>
 
