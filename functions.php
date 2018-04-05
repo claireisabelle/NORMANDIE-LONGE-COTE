@@ -91,6 +91,14 @@ if ( ! file_exists( get_template_directory() . '/inc/navwalker/class-wp-bootstra
  ***********************************************
  */
 function nlc_clubs(){
+
+	// Désactive le bouton "Ajouter un club" pour les rôles non administrateurs
+	if(!current_user_can('administrator')){
+		$add_post = 'do_not_allow';
+	}else{
+		$add_post = true;
+	}
+
 	$labels = array(
 		'name'               => _x( 'Clubs', 'normandielongecote' ),
 		'singular_name'      => _x( 'Club', 'post type singular name', 'normandielongecote' ),
@@ -118,7 +126,7 @@ function nlc_clubs(){
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'clubs' ),
 		'capability_type'    => 'post',
-		'capabilities' 		 => array('create_posts' => 'do_not_allow',), // Enlève le bouton "Ajouter un club"
+		'capabilities' 		 => array('create_posts' => $add_post,), // Enlève le bouton "Ajouter un club" sauf pour l'administrateur
 		'map_meta_cap' 		 => true, // Mais permet de toujours éditer / supprimer"
 		'has_archive'        => true,
 		'hierarchical'       => false,
