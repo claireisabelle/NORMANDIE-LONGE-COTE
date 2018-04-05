@@ -59,6 +59,7 @@ add_action('after_setup_theme', 'nlc_setup');
  ***********************************************
  */
 require get_template_directory().'/inc/acf/acf-home.php';
+require get_template_directory().'/inc/acf/acf-clubs.php';
 
 
 /*
@@ -86,7 +87,7 @@ if ( ! file_exists( get_template_directory() . '/inc/navwalker/class-wp-bootstra
 
 /*
  ***********************************************
-	CUSTOM POST TYPE
+	CUSTOM POST TYPE CLUBS
  ***********************************************
  */
 function nlc_clubs(){
@@ -116,11 +117,15 @@ function nlc_clubs(){
 		'show_in_menu'       => true,
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'clubs' ),
-		'capability_type'    => 'page',
+		'capability_type'    => 'post',
+		'capabilities' 		 => array('create_posts' => 'do_not_allow',), // Enlève le bouton "Ajouter un club"
+		'map_meta_cap' 		 => true, // Mais permet de toujours éditer / supprimer"
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 6,
-		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+		'supports'           => array( 'title', 'editor', 'thumbnail', 'author' ),
+		'menu_icon'			 => 'dashicons-id-alt',
+		'taxonomies'          => array( 'category' ),
 	);
 
 	register_post_type( 'clubs', $args );
