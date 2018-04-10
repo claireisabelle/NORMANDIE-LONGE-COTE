@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 	<?php while(have_posts()): the_post(); ?>
 		<title><?php the_field('seo-titre'); ?></title>
-		<meta name="description" content="" />
+		<meta name="description" content="<?php the_field('seo-description'); ?>" />
 		<style>
 			.showcase-interne{
 				background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);

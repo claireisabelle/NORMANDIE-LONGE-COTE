@@ -5,6 +5,19 @@
 
 <?php get_template_part('header2'); ?>
 
-	<h1>hello from archive club</h1>
+<section class="interne-content">
+	
+
+	<h1>Les clubs de Longe Côte de Normandie</h1>
+
+	<div class="front-main-clubs text-center">
+
+		<?php get_template_part('template-loop-clubs'); ?>
+
+	</div>
+	<!-- /.front-main-clubs -->
+
+</section>
+<!-- /.interne-content -->
 
 <?php get_footer(); ?>

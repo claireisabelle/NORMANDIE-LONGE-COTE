@@ -644,6 +644,13 @@ a.page-numbers:hover {
   text-align: left;
   color: #666f7e; }
 
+.interne-content h1 {
+  padding-bottom: 20px;
+  padding-top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.7rem; }
+
 .interne-content h2 {
   padding-bottom: 20px;
   padding-top: 30px;
@@ -677,5 +684,8 @@ a.page-numbers:hover {
 
 .interne-content-icone img {
   border-radius: 75px; }
+
+.interne-content .card {
+  margin-bottom: 30px !important; }
 
 /*# sourceMappingURL=style.css.map */

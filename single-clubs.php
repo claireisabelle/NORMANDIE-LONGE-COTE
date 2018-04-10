@@ -41,7 +41,7 @@
 			<!-- /.interne-content-icone -->
 
 			<p class="text-center"><a href="<?php the_field('url_de_la_page_des_seances'); ?>" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Séances</a>
-			<a href="<?php the_field('url_de_la_page_dactualites'); ?>" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Séances</a></p>
+			<a href="<?php the_field('url_de_la_page_dactualites'); ?>" class="btn btn-primary"><i class="fa fa-commenting-o" aria-hidden="true"></i></i>&nbsp;&nbsp;&nbsp;Actualités</a></p>
 
 			<?php the_content(); ?>
 
@@ -53,8 +53,11 @@
 					<p class="card-text"><strong>E-mail :</strong> <?php the_field('e-mail'); ?> </p>
 					<p class="card-text"><strong>Site Internet :</strong> <a href="<?php the_field('url_du_site_internet'); ?>">Visiter le site</a> </p>
 					<p class="card-text"><strong>Contact :</strong> <?php the_field('nom_du_contact'); ?> </p>
-				</div>
-			</div>
+				</div><!-- /.card-body -->
+			</div><!-- /.card -->
+
+			<p class="text-center"><a href="<?php the_field('url_de_la_page_des_seances'); ?>" class="btn btn-primary"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Séances</a>
+			<a href="<?php the_field('url_de_la_page_dactualites'); ?>" class="btn btn-primary"><i class="fa fa-commenting-o" aria-hidden="true"></i></i>&nbsp;&nbsp;&nbsp;Actualités</a></p>
 
 		</div>
 		<!-- /.interne-content -->

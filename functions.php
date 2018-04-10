@@ -74,6 +74,8 @@ add_filter('excerpt_length', 'nlc_excerpt_length');
  */
 require get_template_directory().'/inc/acf/acf-home.php';
 require get_template_directory().'/inc/acf/acf-clubs.php';
+require get_template_directory().'/inc/acf/acf-page-interne.php';
+require get_template_directory().'/inc/acf/acf-categorie.php';
 
 
 /*
