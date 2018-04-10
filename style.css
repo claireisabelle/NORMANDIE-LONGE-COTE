@@ -43,6 +43,13 @@ a:hover {
   color: #526579;
   text-decoration: none; }
 
+.btn-primary {
+  background-color: #00aee8 !important;
+  border: solid 1px #0078A0 !important; }
+
+.btn-primary:hover {
+  background-color: #0078A0 !important; }
+
 /**
  * 2 - ESPACE CLUB
  */
@@ -526,6 +533,9 @@ footer a:hover {
   width: 150px;
   height: 150px; }
 
+.news-thumbnail-mobile {
+  display: none; }
+
 .news-content {
   display: flex;
   flex-direction: column;
@@ -548,11 +558,15 @@ footer a:hover {
     flex-direction: column; }
 
   .news-thumbnail {
+    display: none; }
+
+  .news-thumbnail-mobile {
+    display: block;
     align-self: flex-start; }
 
-  .news-thumbnail img {
-    width: 75px;
-    height: 75px;
+  .news-thumbnail-mobile img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px; } }
 .news-content-category {
   width: auto; }
@@ -657,5 +671,11 @@ a.page-numbers:hover {
 .interne-content img.alignright {
   float: right;
   margin: 0 0 1em 1em; }
+
+.interne-content-icone {
+  margin-bottom: 30px !important; }
+
+.interne-content-icone img {
+  border-radius: 75px; }
 
 /*# sourceMappingURL=style.css.map */

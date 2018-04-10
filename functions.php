@@ -45,6 +45,8 @@ add_action('wp_enqueue_scripts', 'nlc_styles');
 function nlc_setup(){
 	add_theme_support('post-thumbnails');
 
+	add_image_size('thumbnail-mobile', 400, 100, true);
+
 	// Menu Main
 	register_nav_menus( array(
 		'primary' => __( 'En-Tête', 'normandielongecote' ),
@@ -152,3 +154,5 @@ function nlc_clubs(){
 }
 
 add_action( 'init', 'nlc_clubs' );
+
+

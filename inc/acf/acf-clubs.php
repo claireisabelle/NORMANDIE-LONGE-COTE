@@ -43,7 +43,7 @@ if(function_exists("register_field_group"))
 				'name' => 'icone',
 				'type' => 'image',
 				'instructions' => 'Petite image d\'illustration',
-				'save_format' => 'url',
+				'save_format' => 'id',
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
 			),
@@ -64,7 +64,6 @@ if(function_exists("register_field_group"))
 				'prepend' => '',
 				'append' => '',
 				'formatting' => 'html',
-				'maxlength' => 25,
 			),
 			array (
 				'key' => 'field_5ac5c1db78d3b',

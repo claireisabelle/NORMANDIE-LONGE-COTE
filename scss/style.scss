@@ -65,7 +65,14 @@ a:hover{
 	text-decoration: none;
 }
 
+.btn-primary{
+	background-color: $bleu-clair !important;
+	border: solid 1px #0078A0 !important;
+}
 
+.btn-primary:hover{
+	background-color: #0078A0 !important;
+}
 
 
 
@@ -686,6 +693,10 @@ li.nav-item.active, li.nav-item:hover{
 	height: 150px;
 }
 
+.news-thumbnail-mobile{
+	display: none;
+}
+
 .news-content{
 	display: flex;
 	flex-direction: column;
@@ -715,12 +726,17 @@ li.nav-item.active, li.nav-item:hover{
 	}
 
 	.news-thumbnail{
+		display: none;
+	}
+
+	.news-thumbnail-mobile{
+		display: block;
 		align-self: flex-start;
 	}
 
-	.news-thumbnail img{
-		width: 75px;
-		height: 75px;
+	.news-thumbnail-mobile img{
+		max-width: 100%;
+		height: auto;
 		margin-bottom: 10px;
 	}
 }
@@ -764,6 +780,7 @@ a.page-numbers:hover {
 	background: $bleu-clair;
 	color: #fff;
 }
+
 
 
 
@@ -855,4 +872,12 @@ a.page-numbers:hover {
 .interne-content img.alignright{
 	float:right; 
 	margin:0 0 1em 1em;
+}
+
+.interne-content-icone{
+	margin-bottom: 30px !important;
+}
+
+.interne-content-icone img{
+	border-radius: 75px;
 }
