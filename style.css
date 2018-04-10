@@ -532,23 +532,12 @@ footer a:hover {
   justify-content: space-between; }
 
 .news-content h3 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding-top: 10px; }
 
 .news-link {
   display: inline-block;
-  background-color: #526579;
-  color: #fff;
-  text-align: center;
-  width: auto;
-  padding: 5px 30px 5px 30px;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease; }
-
-.news-link:hover {
-  background-color: #00aee8;
-  color: #fff; }
+  color: #00aee8; }
 
 @media (max-width: 650px) {
   .actualites {
@@ -565,6 +554,38 @@ footer a:hover {
     width: 75px;
     height: 75px;
     margin-bottom: 10px; } }
+.news-content-category {
+  width: auto; }
+
+.news-content-category a {
+  color: #fff;
+  padding: 3px 20px !important;
+  margin: 0px !important;
+  font-size: 0.8rem;
+  opacity: 0.7; }
+
+.news-content-category a:hover {
+  opacity: 1; }
+
+nav.navigation.pagination h2 {
+  opacity: 0 !important;
+  display: none; }
+
+.page-numbers {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px 0 0;
+  border: 1px solid #eee;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600; }
+
+.page-numbers.current,
+a.page-numbers:hover {
+  background: #00aee8;
+  color: #fff; }
+
 /**
  * 11 - PAGE INTERNE
  */
