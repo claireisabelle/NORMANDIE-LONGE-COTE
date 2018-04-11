@@ -581,6 +581,13 @@ footer a:hover {
 .news-content-category a:hover {
   opacity: 1; }
 
+.news-content-category.in-single {
+  margin-bottom: 30px;
+  margin-top: -30px !important; }
+
+.news-content-previous-next a {
+  color: #666f7e !important; }
+
 nav.navigation.pagination h2 {
   opacity: 0 !important;
   display: none; }
@@ -666,10 +673,6 @@ a.page-numbers:hover {
   max-width: 100%;
   height: auto; }
 
-.interne-content img {
-  max-width: 100%;
-  height: auto; }
-
 .interne-content img.aligncenter {
   display: block;
   margin-left: auto;
@@ -687,5 +690,8 @@ a.page-numbers:hover {
 
 .interne-content .card {
   margin-bottom: 30px !important; }
+
+.interne-content-single-img {
+  margin: 40px 0; }
 
 /*# sourceMappingURL=style.css.map */

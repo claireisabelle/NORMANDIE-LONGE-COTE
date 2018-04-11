@@ -46,6 +46,7 @@ function nlc_setup(){
 	add_theme_support('post-thumbnails');
 
 	add_image_size('thumbnail-mobile', 400, 100, true);
+	add_image_size('panoramique', 800, 350, true);
 
 	// Menu Main
 	register_nav_menus( array(
