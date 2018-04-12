@@ -16,4 +16,3 @@ global $EM_Event;
 echo $EM_Event->output_single();
 ?>
 
-<h1>hello from event-single.php !</h1>

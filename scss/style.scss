@@ -24,6 +24,7 @@
  * 9 - FOOTER
  * 10 - ACTUALITES
  * 11 - PAGES INTERNES
+ * 12 - EVENT MANAGER
  */
 
 
@@ -897,4 +898,14 @@ a.page-numbers:hover {
 
 .interne-content-single-img{
 	margin: 40px 0;
+}
+
+
+/**
+ * 12 - EVENT MANAGER
+ */
+
+.event-manager-display-all-events ul{
+	list-style: square;
+	margin-top: 10px;
 }

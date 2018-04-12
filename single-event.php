@@ -9,15 +9,8 @@
 
 
 		<div class="interne-content" id="interne-content">
-		
-
-			<h1><?php the_title(); ?></h1>
-					
-			<?php the_content(); ?>
-
-			<hr />
-			
-			
+				
+			<?php the_content(); ?>				
 
 		</div>
 		<!-- /.interne-content -->
