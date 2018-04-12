@@ -159,3 +159,21 @@ function nlc_clubs(){
 add_action( 'init', 'nlc_clubs' );
 
 
+/*
+ ***********************************************
+	NOMMAGE DES ROLES
+ ***********************************************
+ */
+function nlc_change_role_name() {
+    global $wp_roles;
+    if ( ! isset( $wp_roles ) )
+        $wp_roles = new WP_Roles();
+    //Roles : "administrator" "editor", "author", "contributor" or "subscriber"
+    $wp_roles->roles['author']['name'] = 'Club';
+    $wp_roles->role_names['author'] = 'Club';  
+    $wp_roles->roles['contributor']['name'] = 'Encadrant';
+    $wp_roles->role_names['contributor'] = 'Encadrant';  
+    $wp_roles->roles['subscriber']['name'] = 'Adherent';
+    $wp_roles->role_names['subscriber'] = 'Adherent'; 
+}
+add_action('init', 'nlc_change_role_name');
