@@ -1,4 +1,4 @@
-		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+		<nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
 
 			<a class="navbar-brand" href="#" id="header-ligne1"><?php echo get_theme_mod('header_ligne1', 'Normandie Longe Côte'); ?></a>
 

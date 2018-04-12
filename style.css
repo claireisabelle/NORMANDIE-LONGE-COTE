@@ -291,6 +291,9 @@ li.nav-item.active, li.nav-item:hover {
 @media (max-width: 375px) {
   .navbar-brand {
     display: none; } }
+ul.dropdown-menu li a:focus {
+  background-color: transparent !important; }
+
 /**
  * 6 - SHOWCASE
  */
@@ -724,5 +727,10 @@ div.em-booking-login {
 
   div.em-booking-form-details {
     margin-bottom: 30px; } }
+/**
+ *
+ * 13 - REGLAGE DU TOGGLE
+ *
+ */
 
 /*# sourceMappingURL=style.css.map */

@@ -385,6 +385,10 @@ li.nav-item.active, li.nav-item:hover{
 	}
 }
 
+ul.dropdown-menu li a:focus{
+	background-color: transparent !important;
+}
+
 /**
  * 6 - SHOWCASE
  */
@@ -943,3 +947,11 @@ div.em-booking-login{
 	}
 
 }
+
+
+/**
+ *
+ * 13 - REGLAGE DU TOGGLE
+ *
+ */
+
