@@ -69,7 +69,8 @@
 				
 				<div class="section-user">
 					<div class="section-user-title">
-						<a href=""><i class="fa fa-clock-o" aria-hidden="true"></i> Mes réservations</a>
+						<a href="<?php echo site_url('mes-reservations'); ?>"><i class="fa fa-clock-o" aria-hidden="true"></i> Mes inscriptions</a><br />
+						<a href="<?php echo site_url('wp-login.php'); ?>"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a>
 					</div><!-- /.espace-user-title -->
 				</div><!-- /.espace-user -->
 

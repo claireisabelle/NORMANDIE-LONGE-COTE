@@ -1,0 +1,19 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+			<th scope="col">Club</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Début</th>
+			<th scope="col">Séance</th>
+		</tr>
+   	</thead>
+    <tbody>
+
+    <tr>
+        <td><a href="#_CATEGORYURL" style="color:#_CATEGORYCOLOR">#_CATEGORYNAME</a></td>
+	<td>#_EVENTDATES</td>
+         <td>#_24HSTARTTIME</td>
+            <td>#_EVENTLINK           
+            </td>
+        </tr>
+</tbody></table>

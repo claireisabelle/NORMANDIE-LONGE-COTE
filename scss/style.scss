@@ -919,3 +919,27 @@ a.page-numbers:hover {
 		padding-bottom: 15px;
 	}
 }
+
+div.em-booking-login label{
+	width: auto !important;
+}
+
+div.em-booking-login{
+	border-left: 1px solid #eeeeee !important;
+}
+
+@media only screen and (max-width: 900px){
+
+	div.em-booking-login{
+		float: none !important;
+		clear:both !important;
+		margin-left: 0px !important;
+		border-left: 0px solid #eeeeee !important;
+		border-top: 1px solid #eeeeee !important;
+	}
+
+	div.em-booking-form-details{
+		margin-bottom: 30px;
+	}
+
+}
