@@ -36,7 +36,8 @@
 				<table id='dbem-bookings-table' class='table table-hover'>
 					<thead>
 						<tr>
-							<th class='manage-column' scope='col'><?php _e('Event', 'events-manager'); ?></th>
+							<th>Organisateur</th>
+							<th class='manage-column' scope='col'><?php _e('Séance', 'events-manager'); ?></th>
 							<th class='manage-column' scope='col'><?php _e('Date', 'events-manager'); ?></th>
 							<th class='manage-column' scope='col'><?php _e('Spaces', 'events-manager'); ?></th>
 							<th class='manage-column' scope='col'><?php _e('Status', 'events-manager'); ?></th>
@@ -55,6 +56,8 @@
 								$rowno++;
 								?>
 								<tr>
+									<td><a href="<?php echo $EM_Event->output("##_CATEGORYURL
+"); ?>" style="color:<?php echo $EM_Event->output("#_CATEGORYCOLOR"); ?>"><?php echo $EM_Event->output("#_CATEGORYNAME"); ?></a></td>
 									<td><?php echo $EM_Event->output("#_EVENTLINK"); ?></td>
 									<td><?php echo $EM_Event->start()->i18n( get_option('dbem_date_format') ); ?></td>
 									<td><?php echo $EM_Booking->get_spaces() ?></td>
