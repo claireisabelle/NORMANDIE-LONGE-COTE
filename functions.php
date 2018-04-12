@@ -177,3 +177,28 @@ function nlc_change_role_name() {
     $wp_roles->role_names['subscriber'] = 'Adherent'; 
 }
 add_action('init', 'nlc_change_role_name');
+
+
+/*
+ ***********************************************
+	CUSTOMISATION PAGE WP-LOGIN.PHP
+ ***********************************************
+ */
+
+function nlc_custom_login_css()  {
+    echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/css/style-login.css" />';
+}
+add_action('login_head', 'nlc_custom_login_css');
+
+// Filtre qui permet de changer l'url du logo
+function nlc_custom_url_login()  {
+    return get_bloginfo( 'siteurl' ); // On retourne l'index du site
+}
+add_filter('login_headerurl', 'nlc_custom_url_login');
+
+// Filtre qui permet de changer l'attribut title du logo
+function nlc_custom_title_login($message) {
+	$title = 'Normandie Longe Côte';
+    return $title; 
+}
+add_filter('login_headertitle', 'nlc_custom_title_login');
