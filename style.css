@@ -702,4 +702,11 @@ a.page-numbers:hover {
   list-style: square;
   margin-top: 10px; }
 
+.event-manager-display-all-events li {
+  padding-bottom: 10px; }
+
+@media only screen and (max-width: 700px) {
+  .event-manager-display-all-events li {
+    padding-bottom: 15px; } }
+
 /*# sourceMappingURL=style.css.map */

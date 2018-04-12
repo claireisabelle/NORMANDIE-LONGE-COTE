@@ -1,0 +1,4 @@
+<p><strong>Prochaines séances :</strong> </p>
+<div class="event-manager-display-all-events">
+#_CATEGORYALLEVENTS
+</div>
