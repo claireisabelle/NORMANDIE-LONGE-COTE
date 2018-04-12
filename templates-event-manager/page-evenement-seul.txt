@@ -1,0 +1,30 @@
+<div class="news-content-category in-single">
+	<a href="#_CATEGORYURL" style="background-color:#_CATEGORYCOLOR;">#_CATEGORYNAME</a>
+</div>
+
+<h1>#_EVENTNAME</h1>
+<p>
+	<strong>Date : </strong> <span style="color:#_CATEGORYCOLOR">#_EVENTDATES</span><br/>
+	<strong>Horaire : </strong><span style="color:#_CATEGORYCOLOR">#_EVENTTIMES</span>
+</p>
+{has_location}
+<p>
+	<strong>Lieu de rendez-vous : </strong> #_LOCATIONNAME (#_LOCATIONADDRESS, #_LOCATIONPOSTCODE #_LOCATIONTOWN)
+</p>
+{/has_location}
+
+<br style="clear:both" />
+#_EVENTNOTES
+{has_bookings}
+<h3>Inscriptions</h3>
+#_BOOKINGFORM
+{/has_bookings}
+
+<hr />
+<div class="news-content-category">
+	<a href="#_CATEGORYURL" style="background-color:#_CATEGORYCOLOR;">#_CATEGORYNAME à venir :</a>
+</div>
+
+<div class="event-manager-display-all-events">
+#_CATEGORYALLEVENTS
+</div>
