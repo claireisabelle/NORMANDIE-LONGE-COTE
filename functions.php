@@ -171,8 +171,8 @@ function nlc_change_role_name() {
     //Roles : "administrator" "editor", "author", "contributor" or "subscriber"
     $wp_roles->roles['author']['name'] = 'Club';
     $wp_roles->role_names['author'] = 'Club';  
-    $wp_roles->roles['contributor']['name'] = 'Encadrant';
-    $wp_roles->role_names['contributor'] = 'Encadrant';  
+    $wp_roles->roles['contributor']['name'] = 'Contributeur';
+    $wp_roles->role_names['contributor'] = 'Contributeur';  
     $wp_roles->roles['subscriber']['name'] = 'Adherent';
     $wp_roles->role_names['subscriber'] = 'Adherent'; 
 }
@@ -225,3 +225,30 @@ function nlc_my_em_add_default_tickets($tickets, $EM_Bookings, $force_reload = f
     return $tickets;
 }
 add_filter('em_bookings_get_tickets', 'nlc_my_em_add_default_tickets', 10, 2);
+
+
+
+/*
+ ***********************************************
+	AJOUT ROLE ENCADRANT
+ ***********************************************
+ */
+
+$result = add_role( 'encadrant', __(
+
+'Encadrant' ),
+
+	array(
+		'read' => true, // true allows this capability
+		'edit_posts' => false, // Allows user to edit their own posts
+		'edit_pages' => false, // Allows user to edit pages
+		'edit_others_posts' => false, // Allows user to edit others posts not just their own
+		'create_posts' => false, // Allows user to create new posts
+		'manage_categories' => false, // Allows user to manage post categories
+		'publish_posts' => false, // Allows the user to publish, otherwise posts stays in draft mode
+		'edit_themes' => false, // false denies this capability. User can’t edit your theme
+		'install_plugins' => false, // User cant add new plugins
+		'update_plugin' => false, // User can’t update any plugins
+		'update_core' => false, // user cant perform core updates
+	)
+);

@@ -949,9 +949,8 @@ div.em-booking-login{
 }
 
 
-/**
- *
- * 13 - REGLAGE DU TOGGLE
- *
- */
-
+@media only screen and (max-width: 660px){
+	.css-my-bookings{
+		overflow-x: scroll !important;
+	}
+}

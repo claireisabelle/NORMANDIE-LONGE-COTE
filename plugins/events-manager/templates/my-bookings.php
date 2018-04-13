@@ -37,11 +37,11 @@
 					<thead>
 						<tr>
 							<th>Organisateur</th>
-							<th class='manage-column' scope='col'><?php _e('Séance', 'events-manager'); ?></th>
-							<th class='manage-column' scope='col'><?php _e('Date', 'events-manager'); ?></th>
-							<th class='manage-column' scope='col'><?php _e('Spaces', 'events-manager'); ?></th>
-							<th class='manage-column' scope='col'><?php _e('Status', 'events-manager'); ?></th>
-							<th class='manage-column' scope='col'>Annulation</th>
+							<th scope='col'><?php _e('Séance', 'events-manager'); ?></th>
+							<th scope='col'><?php _e('Date', 'events-manager'); ?></th>
+							<th scope='col'><?php _e('Spaces', 'events-manager'); ?></th>
+							<th scope='col'><?php _e('Status', 'events-manager'); ?></th>
+							<th scope='col'>Annulation</th>
 						</tr>
 					</thead>
 					<tbody>

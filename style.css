@@ -727,10 +727,8 @@ div.em-booking-login {
 
   div.em-booking-form-details {
     margin-bottom: 30px; } }
-/**
- *
- * 13 - REGLAGE DU TOGGLE
- *
- */
+@media only screen and (max-width: 660px) {
+  .css-my-bookings {
+    overflow-x: scroll !important; } }
 
 /*# sourceMappingURL=style.css.map */
