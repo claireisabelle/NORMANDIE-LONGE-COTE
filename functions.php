@@ -202,3 +202,26 @@ function nlc_custom_title_login($message) {
     return $title; 
 }
 add_filter('login_headertitle', 'nlc_custom_title_login');
+
+
+
+/*
+ ***********************************************
+	PARAMETRAGE PAR DEFAUT DU NOM DU BILLET
+ ***********************************************
+ */
+function nlc_my_em_add_default_tickets($tickets, $EM_Bookings, $force_reload = false) {
+    if ( empty($tickets->tickets) ) {
+        $ticket_data = array();
+        $ticket_data[0] = array('ticket_name' => 'Place adhérent');
+        $ticket_data[1] = array('ticket_name' => 'Place encadrant');
+
+        if (is_array($tickets->tickets)) unset($tickets->tickets);
+        foreach ($ticket_data as $ticket) {
+            $EM_Ticket = new EM_Ticket($ticket);
+            $tickets->tickets[] = $EM_Ticket;
+        }
+    }
+    return $tickets;
+}
+add_filter('em_bookings_get_tickets', 'nlc_my_em_add_default_tickets', 10, 2);
