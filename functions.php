@@ -1,5 +1,26 @@
 <?php
 
+/* ------------------------------------------------- *|
+	SOMMAIRE
+|* ------------------------------------------------- */
+/**
+ * CSS AND JS SCRIPTS................ Déclaration des fichiers .css et .js
+ * SET UP THEME ..................... Taille des images et thumbnails, déclaration du menu
+ * EXCERPT .......................... Troncage des 1ères lignes de l'article
+ * ADF .............................. Inclusion des fichiers Advanced Custom Fields
+ * CUSTOMIZER ....................... Inclusion des fichiers customizer
+ * NAVWALKER ........................ Inclusion de navwalker pour le menu Bootstrap
+ * CUSTOM POST TYPE CLUBS ........... Post de type "Clubs"
+ * NOMMAGE DES ROLES ................ Dénomination des rôles Wordpress
+ * CUSTOMISATION PAGE WP-LOGIN.PHP .. Personnalisation page login.php
+ * PARAMETRAGE DU NOM DU BILLET ..... Personnalisation plugin Event Manager
+ * AJOUT ROLE ENCADRANT ............. Rôle encadrant basé sur Subscriber avec lecture privée
+ */
+
+
+
+
+
 /*
  ***********************************************
  * CSS AND JS SCRIPTS
@@ -36,6 +57,9 @@ function nlc_styles(){
 add_action('wp_enqueue_scripts', 'nlc_styles');
 
 
+
+
+
 /*
  ***********************************************
  * SET UP THEME
@@ -56,6 +80,9 @@ function nlc_setup(){
 add_action('after_setup_theme', 'nlc_setup');
 
 
+
+
+
 /*
  ***********************************************
  * EXCERPT
@@ -65,6 +92,8 @@ function nlc_excerpt_length(){
 	return 20;
 }
 add_filter('excerpt_length', 'nlc_excerpt_length');
+
+
 
 
 
@@ -79,6 +108,9 @@ require get_template_directory().'/inc/acf/acf-page-interne.php';
 require get_template_directory().'/inc/acf/acf-categorie.php';
 
 
+
+
+
 /*
  ***********************************************
 	CUSTOMIZER
@@ -86,6 +118,9 @@ require get_template_directory().'/inc/acf/acf-categorie.php';
  */
 require get_stylesheet_directory().'/inc/customizer/customizer-footer.php';
 require get_stylesheet_directory().'/inc/customizer/customizer-header.php';
+
+
+
 
 
 /*
@@ -100,6 +135,9 @@ if ( ! file_exists( get_template_directory() . '/inc/navwalker/class-wp-bootstra
 	// file exists... require it.
     require_once get_template_directory() . '/inc/navwalker/class-wp-bootstrap-navwalker.php';
 }
+
+
+
 
 
 /*
@@ -159,6 +197,9 @@ function nlc_clubs(){
 add_action( 'init', 'nlc_clubs' );
 
 
+
+
+
 /*
  ***********************************************
 	NOMMAGE DES ROLES
@@ -177,6 +218,9 @@ function nlc_change_role_name() {
     $wp_roles->role_names['subscriber'] = 'Adherent'; 
 }
 add_action('init', 'nlc_change_role_name');
+
+
+
 
 
 /*
@@ -205,6 +249,8 @@ add_filter('login_headertitle', 'nlc_custom_title_login');
 
 
 
+
+
 /*
  ***********************************************
 	PARAMETRAGE PAR DEFAUT DU NOM DU BILLET
@@ -225,6 +271,8 @@ function nlc_my_em_add_default_tickets($tickets, $EM_Bookings, $force_reload = f
     return $tickets;
 }
 add_filter('em_bookings_get_tickets', 'nlc_my_em_add_default_tickets', 10, 2);
+
+
 
 
 
